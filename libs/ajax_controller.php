@@ -38,6 +38,7 @@ abstract class AjaxController extends Controller {
 		if (!in_array('RequestHandler', $this->components)) {
 			$this->components[] = 'RequestHandler';
 		}
+
 		if (!in_array('Session', $this->components)) {
 			$this->components[] = 'Session';
 		}
@@ -141,7 +142,7 @@ abstract class AjaxController extends Controller {
 			$options['redirect'] = Router::url($options['redirect'], true);
 		}
 
-        Configure::write('debug', 0);
+		Configure::write('debug', 0);
 		header('Content-type: application/json');
 		echo json_encode($options);
 		$this->_stop();
