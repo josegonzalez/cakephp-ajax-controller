@@ -1,0 +1,27 @@
+{
+  "name": "josegonzalez/cakephp-ajax-controller",
+  "version": "0.0.1",
+  "description": "Automatically support ajax requests from popular Javascript libraries without any more thought.",
+  "type": "cakephp-plugin",
+  "keywords": [
+    "cakephp"
+  ],
+  "homepage": "http://github.com/josegonzalez/cakephp-ajax-controller",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jose Diaz-Gonzalez",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "composer/installers": "*"
+  },
+  "support": {
+    "issues": "https://github.com/josegonzalez/cakephp-ajax-controller/issues",
+    "source": "https://github.com/josegonzalez/cakephp-ajax-controller"
+  },
+  "extra": {
+    "installer-name": "AjaxController"
+  }
+}
