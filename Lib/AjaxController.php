@@ -112,8 +112,8 @@ abstract class AjaxController extends Controller {
  */
 	protected function _respond($options = array()) {
 		$isAjax = !$this->_disableAjax
-		          && $this->RequestHandler->isAjax()
-		          && $this->RequestHandler->accepts('json');
+							&& $this->RequestHandler->isAjax()
+							&& $this->RequestHandler->accepts('json');
 		if (!$isAjax) {
 			return false;
 		}
@@ -128,14 +128,14 @@ abstract class AjaxController extends Controller {
 		$this->set($options);
 
 		$options = array_merge(array(
-			'referer'  => $this->referer(),
-			'status'   => empty($this->_status)          ? 200 : $this->_status,
+			'referer' => $this->referer(),
+			'status' => empty($this->_status) ? 200 : $this->_status,
 			'redirect' => null,
-			'message'  => ($message)                     ? $message  : null,
-			'content'  => null,
-			'data'     => empty($this->data)             ? null      : $this->data,
-			'errors'   => empty($this->validationErrors) ? null      : $this->validationErrors,
-			'variables'=> empty($this->viewVars)         ? null      : $this->viewVars,
+			'message' => ($message) ? $message : null,
+			'content' => null,
+			'data' => empty($this->data) ? null : $this->data,
+			'errors' => empty($this->validationErrors) ? null : $this->validationErrors,
+			'variables' => empty($this->viewVars) ? null : $this->viewVars,
 		), $options);
 
 		if (is_array($options['redirect'])) {

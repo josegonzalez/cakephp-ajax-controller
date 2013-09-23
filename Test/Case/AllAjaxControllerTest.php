@@ -9,13 +9,13 @@ class AllAjaxControllerTest extends CakeTestCase {
  *
  * @return void
  */
-  public static function suite() {
-    $suite = new CakeTestSuite('All AjaxController test');
+	public static function suite() {
+		$suite = new CakeTestSuite('All AjaxController test');
 
-    $path = CakePlugin::path('AjaxController') . 'Test' . DS . 'Case' . DS;
-    $suite->addTestDirectoryRecursive($path);
+		$path = CakePlugin::path('AjaxController') . 'Test' . DS . 'Case' . DS;
+		$suite->addTestDirectoryRecursive($path);
 
-    return $suite;
-  }
+		return $suite;
+	}
 
 }
