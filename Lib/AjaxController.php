@@ -74,8 +74,8 @@ abstract class AjaxController extends Controller {
  *
  * @param mixed $url A string or array-based URL pointing to another location within the app,
  *     or an absolute URL
- * @param integer $status Optional HTTP status code (eg: 404)
- * @param boolean $exit If true, exit() will be called after the redirect
+ * @param int $status Optional HTTP status code (eg: 404)
+ * @param bool $exit If true, exit() will be called after the redirect
  * @return mixed void if $exit = false. Terminates script if $exit = true
  */
 	public function redirect($url, $status = null, $exit = true) {
@@ -92,6 +92,7 @@ abstract class AjaxController extends Controller {
  * json if necessary
  *
  * @link http://book.cakephp.org/view/984/Callbacks
+ * @return void
  */
 	public function beforeRender() {
 		$this->_respond();
