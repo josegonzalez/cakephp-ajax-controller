@@ -1,6 +1,5 @@
 {
   "name": "josegonzalez/cakephp-ajax-controller",
-  "version": "0.0.1",
   "description": "Automatically support ajax requests from popular Javascript libraries without any more thought.",
   "type": "cakephp-plugin",
   "keywords": [
