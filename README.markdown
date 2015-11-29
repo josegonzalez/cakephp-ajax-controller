@@ -21,11 +21,11 @@ _[Using [Composer](http://getcomposer.org/)]_
 
 Add the plugin to your project's `composer.json` - something like this:
 
-  {
-    "require": {
-      "josegonzalez/cakephp-ajax-controller": "dev-master"
+    {
+      "require": {
+          "josegonzalez/cakephp-ajax-controller": "dev-master"
+      }
     }
-  }
 
 Because this plugin has the type `cakephp-plugin` set in it's own `composer.json`, composer knows to install it inside your `/Plugins` directory, rather than in the usual vendors file. It is recommended that you add `/Plugins/AjaxController` to your .gitignore file. (Why? [read this](http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).)
 
